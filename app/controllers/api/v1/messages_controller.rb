@@ -16,6 +16,12 @@ class Api::V1::MessagesController < Api::V1::BaseController
   #   end
   # end
 
+  def replace_by_confidential
+    text_message = params[:text]
+    # text_message.gsub(regex match by 'confidential')
+    # model or controller ? before create ? before save ?
+  end
+
   private
 
   # def message_params
