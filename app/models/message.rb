@@ -6,7 +6,6 @@ class Message < ApplicationRecord
 
 
   def instantiate_expire_date
-    message = Message.last
-    message.expire_date = @message.created_at + 3.month
+    self.created_at + 3.month
   end
 end
